@@ -8,7 +8,6 @@ public class Scripture
 {
     private Reference _reference { get; }
     private static List<Word> _word = new List<Word>();
-    private static List<Word> AllWord = new List<Word>();
     private static Random _random = new Random();
 
     public Scripture(Reference reference, string text)
@@ -18,7 +17,6 @@ public class Scripture
         foreach (string items in Array)
         {
             _word.Add(new Word(items));
-            //AllWord.Add(new Word(items));
         }
     }
     public void HideRandomwords(int number)
